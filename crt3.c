@@ -26,6 +26,8 @@ extern void _pei386_runtime_relocator (void);
 /* No atexit on coredll, we must initialize our private version.  */
 BOOL __atexit_init(void);
 
+void __cdecl _cexit(void);
+
 /*
  * This function is called from the entry point for all programs.
  */

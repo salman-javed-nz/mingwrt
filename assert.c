@@ -4,6 +4,7 @@
 #include <assert.h>
 
 #include <_mingw.h>
+#include <windows.h>
 
 static wchar_t *
 mb_wcsdup (const char *str)
