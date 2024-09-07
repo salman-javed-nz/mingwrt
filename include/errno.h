@@ -8,7 +8,7 @@
  *
  */
 
-#ifdef __COREDLL__
+#if 0
 # include_next <errno.h>
 #else /* __COREDLL__ */
 

@@ -247,7 +247,7 @@ CRT0S += crt1.o dllcrt1.o crt2.o dllcrt2.o CRT_fp8.o CRT_fp10.o txtmode.o binmod
 endif
 
 MINGW_OBJS = CRTglob.o CRTfmode.o CRTinit.o dllmain.o gccmain.o \
-	     crtst.o mthr_stub.o \
+	     coredll_stubs.o crtst.o mthr_stub.o \
 	     pseudo-reloc.o pseudo-reloc-list.o cpu_features.o
 
 ifneq (,$(findstring mingw32ce,$(target_alias)))
@@ -644,6 +644,7 @@ dllcrt1.o: dllcrt1.c
 dllcrt2.o: dllcrt1.c
 dllcrt3.o: dllcrt1.c
 dllmain.o: dllmain.c
+coredll_stubs.o: coredll_stubs.c
 main.o: main.c
 winmain_ce.o: winmain_ce.c
 oldnames.o: oldnames.c

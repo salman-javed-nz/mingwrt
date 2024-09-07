@@ -9,7 +9,7 @@
  *
  */
 
-#ifdef __COREDLL__
+#if 0
 # include_next <locale.h>
 #else /* __COREDLL__ */
 
