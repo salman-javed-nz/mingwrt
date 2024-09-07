@@ -70,6 +70,9 @@
 #define	ENOSYS		40	/* Function not implemented (88 in Cyg?) */
 #define	ENOTEMPTY	41	/* Directory not empty (90 in Cyg?) */
 #define	EILSEQ		42	/* Illegal byte sequence */
+#define	EOVERFLOW	75	/* Value too large */
+#define	ECONNREFUSED	107	/* Connection refused */
+#define	EMSGSIZE	115	/* Message size */
 
 /*
  * NOTE: ENAMETOOLONG and ENOTEMPTY conflict with definitions in the
