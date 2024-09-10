@@ -2,7 +2,8 @@
 #include <string.h>
 #include <stdlib.h>
 #include <assert.h>
-
+#define WIN32_LEAN_AND_MEAN
+#include <windows.h>
 #include <_mingw.h>
 
 static wchar_t *
