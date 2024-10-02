@@ -8,9 +8,9 @@
  *
  */
 
-#ifdef __COREDLL__
-# include_next <signal.h>
-#else /* __COREDLL__ */
+//#ifdef __COREDLL__
+//# include_next <signal.h>
+//#else /* __COREDLL__ */
 
 
 #ifndef	_SIGNAL_H_
@@ -101,4 +101,4 @@ _CRTIMP int __cdecl __MINGW_NOTHROW	raise (int);
 
 #endif	/* Not _SIGNAL_H_ */
 
-#endif   /* Not __COREDLL__ */
+//#endif   /* Not __COREDLL__ */

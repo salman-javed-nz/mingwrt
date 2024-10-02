@@ -9,9 +9,9 @@
  *
  */
 
-#ifdef __COREDLL__
-# include_next <locale.h>
-#else /* __COREDLL__ */
+//#ifdef __COREDLL__
+//# include_next <locale.h>
+//#else /* __COREDLL__ */
 
 #ifndef	_LOCALE_H_
 #define	_LOCALE_H_
@@ -92,4 +92,4 @@ _CRTIMP struct lconv* __cdecl __MINGW_NOTHROW localeconv (void);
 
 #endif	/* Not _LOCALE_H_ */
 
-#endif  /* Not __COREDLL__ */
+//#endif  /* Not __COREDLL__ */

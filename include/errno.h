@@ -8,9 +8,9 @@
  *
  */
 
-#ifdef __COREDLL__
-# include_next <errno.h>
-#else /* __COREDLL__ */
+//#ifdef __COREDLL__
+//# include_next <errno.h>
+//#else /* __COREDLL__ */
 
 #ifndef _ERRNO_H_
 #define	_ERRNO_H_
@@ -70,7 +70,9 @@
 #define	ENOSYS		40	/* Function not implemented (88 in Cyg?) */
 #define	ENOTEMPTY	41	/* Directory not empty (90 in Cyg?) */
 #define	EILSEQ		42	/* Illegal byte sequence */
-
+#define EOVERFLOW   75 /* Value too large */
+#define  EMSGSIZE        WSAEMSGSIZE
+#define ECONNREFUSED WSAECONNREFUSED
 /*
  * NOTE: ENAMETOOLONG and ENOTEMPTY conflict with definitions in the
  *       sockets.h header provided with windows32api-0.1.2.
@@ -104,4 +106,4 @@ _CRTIMP int* __cdecl __MINGW_NOTHROW _errno(void);
 
 #endif	/* Not _ERRNO_H_ */
 
-#endif /* Not __COREDLL__ */
+//#endif /* Not __COREDLL__ */
